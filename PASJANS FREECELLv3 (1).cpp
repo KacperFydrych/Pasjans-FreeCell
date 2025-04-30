@@ -190,7 +190,7 @@ bool Mozna_ruszyc(vector<karta> kupka_I, int ktora_karte) {
     int kolor_karty = kupka_I[kupka_I.size() - ktora_karte].kolor;
 
     for (int i = ktora_karte - 1; i > 0; i--) {
-        if (kupka_I[kupka_I.size() - i].numer != nr_karty + 1 || kupka_I[kupka_I.size() - i].kolor % 2 == kolor_karty % 2)
+        if (kupka_I[kupka_I.size() - i].numer != nr_karty - 1 || kupka_I[kupka_I.size() - i].kolor % 2 == kolor_karty % 2)
             mozna_ruszyc = false;
         else {
             kolor_karty++;
