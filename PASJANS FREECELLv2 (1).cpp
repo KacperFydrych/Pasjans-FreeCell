@@ -40,7 +40,7 @@ Ruch zapytajORuch() {
 
     // Wczytaj kt�ra karta od ko�ca
     while (true) {
-        cout << "Ktora karta od konca? (1-n): ";
+        cout << "Ktora karta od dolu? (1-n): ";
         if (cin >> ruch.ktora_karte && ruch.ktora_karte >= 1) {
             break;
         }
